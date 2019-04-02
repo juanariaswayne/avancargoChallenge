@@ -9,14 +9,23 @@ Dentro de la carpeta app vamos a mantener la estructura de todo nuestro proyecto
 a explicar un poco el porque de dicha arquitectura elegida.
 
 --android
+
 --app
+
 -----assets
+
 -----components
+
 -----modules
+
 -----services
+
 -----store
+
 -----views
+
 -----config
+
 --ios
 
 App -> Es la carpeta raiz de nuestra aplicacion.
@@ -47,8 +56,9 @@ En este caso decidi usar la libreria Redux para el manejo de estados de la aplic
 
 En el caso de no querer usar una libreria para manejar los estados de la aplicacion, deberiamos tener nuestros propios providers dentro de la carpeta modules.
 
----------------------------------------------------------------------------------------------
+
 Para Tener en cuenta...
+--------------------------------------------------------------------------------------------
 
 Para poder darle estilos a nuestos componentes estoy usando una libreria externa
 llamada styled-components, ya que me va a permitir trabajar los estilos de una forma mas
@@ -70,8 +80,9 @@ Me parece importante realizar un testeo de las funciones completas del Front y a
 
 Ademas debemos tener cuidado con las animaciones en el sitio... Si bien son muy importantes para tener una mejor UX es importante tener cuidado con esto ya que muchas veces vamos a delegar performance por tener una transicion mas linda.
 
+
+Que pediria a un equipo de desarrollo mobile a la hora de armar un equipo?
 ---------------------------------------------------------------------------------------------
-- Que pediria a un equipo de desarrollo mobile a la hora de armar un equipo?
 
 En la experiencia que tuve armando equipos de desarrollo me di cuenta la importancia de valorar las ganas y el compromiso de afrontar un nuevo desafio mas que ser un experto en una tecnologia especifica. Si me parece super importante obviamente que conozcan la herramienta y que sepan porque la usan y cuales son los pro y contras de usarla. Asi como tambien es importante que hayan tenido la experiencia de haber desarrollado alguna app ya que siempre surgen inconvenientes o cosas a tener en cuenta y eso forma parte de un gran aprendizaje.
 
@@ -80,21 +91,26 @@ Para React Native, me imporaria que sepan que librerias de manejo de estados exi
 Tambien me parece un aspecto importante para el FrontEnd en general la vision de UX, ya que es sumamente importante poder entregar un producto funcional y no solo "lindo".
 
 Aunque por sobre todas las cosas, valoro mucho mas a una persona con ganas de crecer, aprender y afrontar nuevos desafios mas que a un super experto de una tecnologia o libreria, al menos esa es mi apreciacion personal.
+
 ---------------------------------------------------------------------------------------------
 
 Extra... Ultimamente las aplicaciones nuevas de React las estoy utilizando con una sintaxis funcional, ya que me esta resultando mas facil la legibilidad y mantenimiento del codigo.
+----------------------------------------------------------------------------------------------------------------------
 
 Programando con clases lo realizaba de esta forma: 
 
+```javascript
 class Avancargo extends Component {
   render() {
     return (<div>Hello Avancargo!</div>);
   }
 }
+```
 
 Ahora suelo codearlo asi:
-
+```javascript
 const Avancargo = () => <div>Hello Avancargo!</div>;
+```
 
 Pero esto es una apreciacion totalmente personal, lo que si es imporante unificar en un equipo de desarrollo el paradigma a utilizar ya que esto va a permitir el mayor entendimiento del mismo en el grupo.
 
