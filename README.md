@@ -31,7 +31,6 @@ a explicar un poco el porque de dicha arquitectura elegida.
 App -> Es la carpeta raiz de nuestra aplicacion.
 
 Assets -> Aca contengo las imagenes, iconos y fuentes de la aplicacion de forma global.
-Components -> Aca voy a poner todos los componentes compartidos de la app, como por ejemplo un spinner button... En si son componentes que no tienen logica y son facilmente reutilizables.
 
 Components -> Aca contengo los componentes globales de la aplicacion, los que pueden ser reutilizados varias veces y no tienen una logica particular para cada vista... como por ejemplo un spinner button, o un header.
 
